@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Food - EzyGo</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="images/logo.png">
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="brand">
+        <img src="images/logo.png" alt="EzyGo Logo" class="logo">
+        <div>
+          <h1 class="site-title">EzyGo</h1>
+          <p class="tagline">FILL YOUR MOVMENTS WITH COMFORT</p>
+        </div>
+      </div>
+      <input type="checkbox" class="toggle-btn" id="toggleBtn">
+      <label for="toggleBtn" class="toggle-label">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a class="active" href="food.html">Food</a></li>
+        <li><a href="destination.html">Destinations</a></li>
+        <li><a href="facilities.html">Facilities</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="page-hero" style="background:url('images/hero.jpg') no-repeat center/cover; background-attachment: fixed;">
+    <div class="hero-content">
+      <h2>Food & Dining</h2>
+      <p>Discover culinary excellence across four iconic cities</p>
+    </div>
+  </section>
+
+  <section class="food-section">
+    <h2>Paris, France</h2>
+    <div class="cuisine-tabs">
+      <input type="radio" id="paris-all" name="paris-filter" value="all" checked>
+      <label for="paris-all" class="cuisine-tab">All</label>
+      
+      <input type="radio" id="paris-vegan" name="paris-filter" value="vegan">
+      <label for="paris-vegan" class="cuisine-tab">Vegan</label>
+      
+      <input type="radio" id="paris-vegetarian" name="paris-filter" value="vegetarian">
+      <label for="paris-vegetarian" class="cuisine-tab">Vegetarian</label>
+      
+      <input type="radio" id="paris-nonveg" name="paris-filter" value="nonveg">
+      <label for="paris-nonveg" class="cuisine-tab">Non-Vegetarian</label>
+    </div>
+    <div class="restaurant-grid" id="paris-restaurants">
+      <div class="restaurant-card" data-cuisine="nonveg">
+        <div class="restaurant-header">
+          <div class="restaurant-name">Le Meurice</div>
+          <div class="restaurant-city">Paris, France</div>
+          <span class="cuisine-badge cuisine-nonveg">Non-Vegetarian</span>
+        </div>
+        <div class="restaurant-body">
+          <div class="rating">
+            <span class="rating-stars">★★★★★</span>
+            <span class="rating-score">5.0/5</span>
+          </div>
+          <div class="dish-name">Duck Confit</div>
+          <div class="food-suggestions">Classic French preparation with crispy skin and tender meat, served with seasonal vegetables.</div>
+        </div>
+      </div>
+      <div class="restaurant-card" data-cuisine="nonveg">
+        <div class="restaurant-header">
+          <div class="restaurant-name">Boutary</div>
+          <div class="restaurant-city">Paris, France</div>
+          <span class="cuisine-badge cuisine-nonveg">Non-Vegetarian</span>
+        </div>
+        <div class="restaurant-body">
+          <div class="rating">
+            <span class="rating-stars">★★★★☆</span>
+            <span class="rating-score">4.8/5</span>
+          </div>
+          <div class="dish-name">Beef Wellington</div>
+          <div class="food-suggestions">Caviar-topped oysters and beef Wellington with red wine sauce in elegant French bistro setting.</div>
+        </div>
+      </div>
+      <div class="restaurant-card" data-cuisine="vegan">
+        <div class="restaurant-header">
+          <div class="restaurant-name">L'Arpège</div>
+          <div class="restaurant-city">Paris, France</div>
+          <span class="cuisine-badge cuisine-vegan">Vegan</span>
+        </div>
+        <div class="restaurant-body">
+          <div class="rating">
+            <span class="rating-stars">★★★★★</span>
+            <span class="rating-score">4.9/5</span>
+          </div>
+          <div class="dish-name">Vegetable Tasting Menu</div>
+          <div class="food-suggestions">Innovative plant-based dishes showcasing seasonal produce with creative presentations.</div>
+        </div>
+      </div>
+      <div class="restaurant-card" data-cuisine="vegan">
+        <div class="restaurant-header">
+          <div class="restaurant-name">Le Potager de Charlotte</div>
+          <div class="restaurant-city">Paris, France</div>
+          <span class="cuisine-badge cuisine-vegan">Vegan</span>
+        </div>
+        <div class="restaurant-body">
+          <div class="rating">
+            <span class="rating-stars">★★★★☆</span>
+            <span class="rating-score">4.8/5</span>
+          </div>
+          <div class="dish-name">Seitan Bourguignon</div>
+          <div class="food-suggestions">Vegan foie gras alternative with seasonal veggies and plant-based French classics.</div>
+        </div>
+      </div>
+      <div class="restaurant-card" data-cuisine="vegetarian">
+        <div class="restaurant-header">
+          <div class="restaurant-name">Café de Flore</div>
+          <div class="restaurant-city">Paris, France</div>
+          <span class="cuisine-badge cuisine-vegetarian">Vegetarian</span>
+        </div>
+        <div class="restaurant-body">
+          <div class="rating">
+            <span class="rating-stars">★★★★☆</span>
+            <span class="rating-score">4.7/5</span>
+          </div>
+          <div class="dish-name">Croissants</div>
+          <div class="food-suggestions">Buttery, flaky pastries perfect with coffee. Traditional French breakfast experience.</div>
+        </div>
+      </div>
+      <div class="restaurant-card" data-cuisine="vegetarian">
+        <div class="restaurant-header">
+          <div class="restaurant-name">Waly-Fay</div>
+          <div class="restaurant-city">Paris, France</div>
+          <span class="cuisine-badge cuisine-vegetarian">Vegetarian</span>
+        </div>
+        <div class="restaurant-body">
+          <div class="rating">
+            <span class="rating-stars">★★★★☆</span>
+            <span class="rating-score">4.7/5</span>
+          </div>
+          <div class="dish-name">Peanut Stew</div>
+          <div class="food-suggestions">West African vegetarian cuisine with peanut stew, plantains, and veggie jollof rice.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="food-section">
+    <h2>New York, USA</h2>
+    <div class="cuisine-tabs">
+      <input type="radio" id="nyc-all" name="nyc-filter" value="all" checked>
+      <label for="nyc-all" class="cuisine-tab">All</label>
+      
+      <input type="radio" id="nyc-vegan" name="nyc-filter" value="vegan">
+      <label for="nyc-vegan" class="cuisine-tab">Vegan</label>
+      
+      <input type="radio" id="nyc-vegetarian" name="nyc-filter" value="vegetarian">
+      <label for="nyc-vegetarian" class="cuisine-tab">Vegetarian</label>
+      
+      <input type="radio" id="nyc-nonveg" name="nyc-filter" value="nonveg">
+      <label for="nyc-nonveg" class="cuisine-tab">Non-Vegetarian</label>
+    </div>
+    <div class="restaurant-grid" id="nyc-restaurants">
+      <div class="restaurant-card" data-cuisine="nonveg">
+        <div class="restaurant-header">
+          <div class="restaurant-name">Katz's Deli</div>
+          <div class="restaurant-city">New York, USA</div>
+          <span class="cuisine-badge cuisine-nonveg">Non-Vegetarian</span>
+        </div>
+        <div class="restaurant-body">
+          <div class="rating">
+            <span class="rating-stars">★★★★★</span>
+            <span class="rating-score">5.0/5</span>
+          </div>
+          <div class="dish-name">Pastrami Sandwich</div>
+          <div class="food-suggestions">Legendary deli sandwich with hand-sliced pastrami, mustard, and rye bread.</div>
+        </div>
+      </div>
+      <div class="restaurant-card" data-cuisine="nonveg">
+        <div class="restaurant-header">
+          <div class="restaurant-name">Le Bernardin</div>
+          <div class="restaurant-city">New York, USA</div>
+          <span class="cuisine-badge cuisine-nonveg">Non-Vegetarian</span>
+        </div>
+        <div class="restaurant-body">
+          <div class="rating">
+            <span class="rating-stars">★★★★★</span>
+            <span class="rating-score">4.9/5</span>
+          </div>
+          <div class="dish-name">Tuna Carpaccio</div>
+          <div class="food-suggestions">Seafood French cuisine with tuna carpaccio and poached halibut in elegant setting.</div>
+        </div>
+      </div>
+      <div class="restaurant-card" data-cuisine="vegan">
+        <div class="restaurant-header">
+          <div class="restaurant-name">By Chloe</div>
+          <div class="restaurant-city">New York, USA</div>
+          <span class="cuisine-badge cuisine-vegan">Vegan</span>
+        </div>
+        <div class="restaurant-body">
+          <div class="rating">
+            <span class="rating-stars">★★★★☆</span>
+            <span class="rating-score">4.8/5</span>
+          </div>
+          <div class="dish-name">Vegan Mac & Cheese</div>
+          <div class="food-suggestions">Creamy cashew-based mac and cheese with crispy breadcrumb topping.</div>
+        </div>
+      </div>
+      <div class="restaurant-card" data-cuisine="vegan">
+        <div class="restaurant-header">
+          <div class="restaurant-name">Dirt Candy</div>
+          <div class="restaurant-city">New York, USA</div>
+          <span class="cuisine-badge cuisine-vegan">Vegan</span>
+        </div>
+        <div class="restaurant-body">
+          <div class="rating">
+            <span class="rating-stars">★★★★★</span>
+            <span class="rating-score">4.9/5</span>
+          </div>
+          <div class="dish-name">Carrot Sliders</div>
+          <div class="food-suggestions">Creative vegan cuisine with carrot sliders and mushroom pâté with brioche.</div>
+        </div>
+      </div>
+      <div class="restaurant-card" data-cuisine="vegetarian">
+        <div class="restaurant-header">
+          <div class="restaurant-name">Superiority Burger</div>
+          <div class="restaurant-city">New York, USA</div>
+          <span class="cuisine-badge cuisine-vegetarian">Vegetarian</span>
+        </div>
+        <div class="restaurant-body">
+          <div class="rating">
+            <span class="rating-stars">★★★★☆</span>
+            <span class="rating-score">4.7/5</span>
+          </div>
+          <div class="dish-name">Burnt Broccoli Salad</div>
+          <div class="food-suggestions">American vegetarian with burnt broccoli salad and lentil sloppy joe.</div>
+        </div>
+      </div>
+      <div class="restaurant-card" data-cuisine="vegetarian">
+        <div class="restaurant-header">
+          <div class="restaurant-name">HanGawi</div>
+          <div class="restaurant-city">New York, USA</div>
+          <span class="cuisine-badge cuisine-vegetarian">Vegetarian</span>
+        </div>
+        <div class="restaurant-body">
+          <div class="rating">
+            <span class="rating-stars">★★★★★</span>
+            <span class="rating-score">4.9/5</span>
+          </div>
+          <div class="dish-name">Stone Bowl Bibimbap</div>
+          <div class="food-suggestions">Korean vegetarian with stone bowl bibimbap and avocado stone pot rice.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="food-section">
+    <h2>Tokyo, Japan</h2>
+    <div class="cuisine-tabs">
+      <input type="radio" id="tokyo-all" name="tokyo-filter" value="all" checked>
+      <label for="tokyo-all" class="cuisine-tab">All</label>
+      
+      <input type="radio" id="tokyo-vegan" name="tokyo-filter" value="vegan">
+      <label for="tokyo-vegan" class="cuisine-tab">Vegan</label>
+      
+      <input type="radio" id="tokyo-vegetarian" name="tokyo-filter" value="vegetarian">
+      <label for="tokyo-vegetarian" class="cuisine-tab">Vegetarian</label>
+      
+      <input type="radio" id="tokyo-nonveg" name="tokyo-filter" value="nonveg">
+      <label for="tokyo-nonveg" class="cuisine-tab">Non-Vegetarian</label>
+    </div>
+    <div class="restaurant-grid" id="tokyo-restaurants">
+      <div class="restaurant-card" data-cuisine="nonveg">
+        <div class="restaurant-header">
+          <div class="restaurant-name">Sukiyabashi Jiro</div>
+          <div class="restaurant-city">Tokyo, Japan</div>
+          <span class="cuisine-badge cuisine-nonveg">Non-Vegetarian</span>
+        </div>
+        <div class="restaurant-body">
+          <div class="rating">
+            <span class="rating-stars">★★★★★</span>
+            <span class="rating-score">5.0/5</span>
+          </div>
+          <div class="dish-name">Sushi</div>
+          <div class="food-suggestions">World-renowned sushi master's omakase experience with the freshest fish.</div>
+        </div>
+      </div>
+      <div class="restaurant-card" data-cuisine="nonveg">
+        <div class="restaurant-header">
+          <div class="restaurant-name">Kobegyu Sumibiyaki Steak Ginza Fun</div>
+          <div class="restaurant-city">Tokyo, Japan</div>
+          <span class="cuisine-badge cuisine-nonveg">Non-Vegetarian</span>
+        </div>
+        <div class="restaurant-body">
+          <div class="rating">
+            <span class="rating-stars">★★★★☆</span>
+            <span class="rating-score">4.8/5</span>
+          </div>
+          <div class="dish-name">Wagyu Steak</div>
+          <div class="food-suggestions">Premium steakhouse with wagyu steak and grilled seafood skewers.</div>
+        </div>
+      </div>
+      <div class="restaurant-card" data-cuisine="vegan">
+        <div class="restaurant-header">
+          <div class="restaurant-name">T's TanTan</div>
+          <div class="restaurant-city">Tokyo, Japan</div>
+          <span class="cuisine-badge cuisine-vegan">Vegan</span>
+        </div>
+        <div class="restaurant-body">
+          <div class="rating">
+            <span class="rating-stars">★★★★☆</span>
+            <span class="rating-score">4.8/5</span>
+          </div>
+          <div class="dish-name">Vegan Ramen</div>
+          <div class="food-suggestions">Rich vegetable broth ramen with plant-based toppings and noodles.</div>
+        </div>
+      </div>
+      <div class="restaurant-card" data-cuisine="vegan">
+        <div class="restaurant-header">
+          <div class="restaurant-name">Saido</div>
+          <div class="restaurant-city">Tokyo, Japan</div>
+          <span class="cuisine-badge cuisine-vegan">Vegan</span>
+        </div>
+        <div class="restaurant-body">
+          <div class="rating">
+            <span class="rating-stars">★★★★★</span>
+            <span class="rating-score">4.9/5</span>
+          </div>
+          <div class="dish-name">Vegan Sushi Rolls</div>
+          <div class="food-suggestions">Japanese vegan with vegan sushi rolls and tempura vegetables.</div>
+        </div>
+      </div>
+      <div class="restaurant-card" data-cuisine="vegetarian">
+        <div class="restaurant-header">
+          <div class="restaurant-name">Daigo</div>
+          <div class="restaurant-city">Tokyo, Japan</div>
+          <span class="cuisine-badge cuisine-vegetarian">Vegetarian</span>
+        </div>
+        <div class="restaurant-body">
+          <div class="rating">
+            <span class="rating-stars">★★★★☆</span>
+            <span class="rating-score">4.8/5</span>
+          </div>
+          <div class="dish-name">Seasonal Tempura</div>
+          <div class="food-suggestions">Kaiseki vegetarian with seasonal tempura and tofu kaiseki course.</div>
+        </div>
+      </div>
+      <div class="restaurant-card" data-cuisine="vegetarian">
+        <div class="restaurant-header">
+          <div class="restaurant-name">Savoy Kaminarimon</div>
+          <div class="restaurant-city">Tokyo, Japan</div>
+          <span class="cuisine-badge cuisine-vegetarian">Vegetarian</span>
+        </div>
+        <div class="restaurant-body">
+          <div class="rating">
+            <span class="rating-stars">★★★★☆</span>
+            <span class="rating-score">4.7/5</span>
+          </div>
+          <div class="dish-name">Margherita Pizza</div>
+          <div class="food-suggestions">Italian vegetarian with margherita pizza and caprese salad.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="food-section">
+    <h2>Zurich, Switzerland</h2>
+    <div class="cuisine-tabs">
+      <input type="radio" id="zurich-all" name="zurich-filter" value="all" checked>
+      <label for="zurich-all" class="cuisine-tab">All</label>
+      
+      <input type="radio" id="zurich-vegan" name="zurich-filter" value="vegan">
+      <label for="zurich-vegan" class="cuisine-tab">Vegan</label>
+      
+      <input type="radio" id="zurich-vegetarian" name="zurich-filter" value="vegetarian">
+      <label for="zurich-vegetarian" class="cuisine-tab">Vegetarian</label>
+      
+      <input type="radio" id="zurich-nonveg" name="zurich-filter" value="nonveg">
+      <label for="zurich-nonveg" class="cuisine-tab">Non-Vegetarian</label>
+    </div>
+    <div class="restaurant-grid" id="zurich-restaurants">
+      <div class="restaurant-card" data-cuisine="vegetarian">
+        <div class="restaurant-header">
+          <div class="restaurant-name">Haus Hiltl</div>
+          <div class="restaurant-city">Zurich, Switzerland</div>
+          <span class="cuisine-badge cuisine-vegetarian">Vegetarian</span>
+        </div>
+        <div class="restaurant-body">
+          <div class="rating">
+            <span class="rating-stars">★★★★★</span>
+            <span class="rating-score">5.0/5</span>
+          </div>
+          <div class="dish-name">Vegetarian Buffet</div>
+          <div class="food-suggestions">World's oldest vegetarian restaurant with extensive buffet of global dishes.</div>
+        </div>
+      </div>
+      <div class="restaurant-card" data-cuisine="vegetarian">
+        <div class="restaurant-header">
+          <div class="restaurant-name">Elmira Fine Dining</div>
+          <div class="restaurant-city">Zurich, Switzerland</div>
+          <span class="cuisine-badge cuisine-vegetarian">Vegetarian</span>
+        </div>
+        <div class="restaurant-body">
+          <div class="rating">
+            <span class="rating-stars">★★★★★</span>
+            <span class="rating-score">5.0/5</span>
+          </div>
+          <div class="dish-name">Beet Carpaccio</div>
+          <div class="food-suggestions">Modern vegetarian with beet carpaccio and mushroom risotto.</div>
+        </div>
+      </div>
+      <div class="restaurant-card" data-cuisine="vegan">
+        <div class="restaurant-header">
+          <div class="restaurant-name">Roots</div>
+          <div class="restaurant-city">Zurich, Switzerland</div>
+          <span class="cuisine-badge cuisine-vegan">Vegan</span>
+        </div>
+        <div class="restaurant-body">
+          <div class="rating">
+            <span class="rating-stars">★★★★☆</span>
+            <span class="rating-score">4.8/5</span>
+          </div>
+          <div class="dish-name">Avocado Toast</div>
+          <div class="food-suggestions">Plant-based with avocado toast with superfoods and quinoa bowl.</div>
+        </div>
+      </div>
+      <div class="restaurant-card" data-cuisine="vegan">
+        <div class="restaurant-header">
+          <div class="restaurant-name">Hiltl</div>
+          <div class="restaurant-city">Zurich, Switzerland</div>
+          <span class="cuisine-badge cuisine-vegan">Vegan</span>
+        </div>
+        <div class="restaurant-body">
+          <div class="rating">
+            <span class="rating-stars">★★★★☆</span>
+            <span class="rating-score">4.7/5</span>
+          </div>
+          <div class="dish-name">Vegan Schnitzel</div>
+          <div class="food-suggestions">Swiss vegan with vegan schnitzel and curry lentil stew.</div>
+        </div>
+      </div>
+      <div class="restaurant-card" data-cuisine="nonveg">
+        <div class="restaurant-header">
+          <div class="restaurant-name">Kronenhalle</div>
+          <div class="restaurant-city">Zurich, Switzerland</div>
+          <span class="cuisine-badge cuisine-nonveg">Non-Vegetarian</span>
+        </div>
+        <div class="restaurant-body">
+          <div class="rating">
+            <span class="rating-stars">★★★★☆</span>
+            <span class="rating-score">4.8/5</span>
+          </div>
+          <div class="dish-name">Zürcher Geschnetzeltes</div>
+          <div class="food-suggestions">Traditional Swiss veal in creamy mushroom sauce with rösti potatoes.</div>
+        </div>
+      </div>
+      <div class="restaurant-card" data-cuisine="nonveg">
+        <div class="restaurant-header">
+          <div class="restaurant-name">Zeughauskeller</div>
+          <div class="restaurant-city">Zurich, Switzerland</div>
+          <span class="cuisine-badge cuisine-nonveg">Non-Vegetarian</span>
+        </div>
+        <div class="restaurant-body">
+          <div class="rating">
+            <span class="rating-stars">★★★★☆</span>
+            <span class="rating-score">4.7/5</span>
+          </div>
+          <div class="dish-name">Sausage Platter</div>
+          <div class="food-suggestions">Traditional Swiss sausages with sauerkraut and mustard in historic setting.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <footer>
+    <div class="footer-grid">
+      <div class="footer-col">
+        <h4>Explore</h4>
+        <ul>
+          <li><a href="destination.html">Culture</a></li>
+          <li><a href="food.html">Food</a></li>
+          <li><a href="destination.html">Famous Places</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <ul>
+          <li>Email: support@ezygo.com</li>
+          <li>Phone: +1-800-EZY-GO</li>
+          <li><a href="#">LinkedIn Profile</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Follow Us</h4>
+        <div class="social-icons">
+          <a href="#" aria-label="Facebook"><img src="images/facebook.svg" alt="Facebook"></a>
+          <a href="#" aria-label="Instagram"><img src="images/instagram.svg" alt="Instagram"></a>
+          <a href="#" aria-label="X"><img src="images/x.svg" alt="X"></a>
+          <a href="#" aria-label="LinkedIn"><img src="images/linkedin.svg" alt="LinkedIn"></a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 EzyGo</p>
+    </div>
+  </footer>
+
+</body>
+</html>
